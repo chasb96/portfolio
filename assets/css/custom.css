@@ -1,3 +1,15 @@
 body {
     color: #1a1a1a;
 }
+
+.flex-container {
+    display: flex;
+}
+
+.flex-align {
+    flex: 1;
+}
+
+.github-container {
+    min-width: 32em;
+}
