@@ -38,9 +38,9 @@ fn resume() -> Template {
     Template::render("resume", &context)
 }
 
-#[get("/resume/resume.docx")]
-fn download() -> Option<NamedFile> {
-    NamedFile::open(Path::new("files/resume.docx")).ok()
+#[get("/files/<file..>")]
+fn download(file: PathBuf) -> Option<NamedFile> {
+    NamedFile::open(Path::new("files/").join(file)).ok()
 }
 
 #[get("/assets/<file..>")]
