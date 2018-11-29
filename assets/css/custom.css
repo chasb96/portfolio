@@ -13,3 +13,21 @@ body {
 .github-container {
     min-width: 32em;
 }
+
+#profile {
+    width: 30em;
+    height: 10em;
+    border-radius: 1em;
+}
+
+#info {
+    width: 20em;
+}
+
+#avatar {
+    width: 10em;
+    height: 10em;
+    background-size: contain;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
