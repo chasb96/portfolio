@@ -1,0 +1,94 @@
+{% extends "base" %}
+
+{% block body %}
+    {{ super() }}
+
+    <div class="container mt-4 mb-4">
+        <h2 class="h2">About Me</h2>
+
+        <p>
+            Charles is a software engineer from San Ramon, California.
+            He completed my Bachelor's of Science in Information Technology, in
+            2018, with a Minor in Mathematics, with a focus in Software Engineering.
+            He primarily focuses in server-side web development.
+
+            <br /><br />
+
+            Charles spends a large amount of his time working on personal projects,
+            many of which can be found on the <a href="/projects">Projects page<a>, or on his <a href="#github-container">Github (listed below)</a>.
+            He is an avid reader, most consumed in social psychology and software development.
+
+            <br /><br />
+
+            Charles' top languages include:
+            <ul>
+                <li>Rust</li>
+                <li>Php</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+                <li>TypeScript-React</li>
+            </ul>
+
+            The top technologies he is most familiar with include:
+            <ul>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>SQLServer</li>
+                <li>Apache2</li>
+                <li>Nginx</li>
+            </ul>
+
+            Other tools, technologies and frameworks include:
+            <ul>
+                <li>Rocket</li>
+                <li>Diesel</li>
+                <li>Laravel</li>
+                <li>React</li>
+                <li>Bootstrap</li>
+            </ul>
+
+            He is most familiar with the buisiness software:
+            <ul>
+                <li>Slack</li>
+                <li>Team Foundation Server (TFS)</li>
+                <li>GitHub</li>
+                <li>BitBucket</li>
+                <li>Microsoft Teams</li>
+            </ul>
+        </p>
+    </div>
+
+    <div id="github-container" class="container-fluid text-white bg-primary">
+        <div class="flex-container p-5">
+            <div class="flex-align"></div>
+            <div class="github-container" data-user="chasb96">
+                <h2 class="h2 text-white">GitHub</h2>
+                <a id="url">
+                    <div id="profile" class="bg-white text-dark row">
+                        <div id="avatar"></div>
+                        <div id="info" class="p-3">
+                            <h2 id="name"></h2>
+                            <p id="repos"></p>
+                            <p id="followers"></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="flex-align"></div>
+        </div>
+    </div>
+
+    <script>
+        $.ajax({
+            url: 'https://api.github.com/users/' + $('.github-container').data('user')
+        }).then((response) => {
+            let avatar_url = 'url("' + response.avatar_url + '")';
+
+            $('#url').attr('href', response.html_url);
+            $('#avatar').css('background-image', avatar_url);
+            $('#name').html(response.name);
+            $('#repos').html(response.public_repos + ' Respositories');
+            $('#followers').html(response.followers + ' Followers');
+        })
+    </script>
+{% endblock body %}

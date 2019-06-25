@@ -1,0 +1,92 @@
+{% extends "base" %}
+
+{% block body %}
+{{ super() }}
+
+<div class="container mt-4 mb-4">
+    <h2 class="h2">Projects</h2>
+
+    <br />
+
+    <div class="d-flex">
+        <h4 class="h4 mb-0">Personal Cloud Storage</h4>
+
+        <div class="flex-grow-1"></div>
+
+        <a class="mb-0" href="https://drive.cstouten.xyz">https://drive.cstouten.xyz</a>
+    </div>
+
+    <hr />
+
+    <p>
+        A cloud storage server made specifically for personal use.
+
+        <br /><br />
+
+        Originally designed at request from a friend, but later expanded to hit personal needs.
+        This project is meant to allow storage of files at a remote location, rather than
+        needing an outside service to do so. It allows creating, updating, and deleting files
+        within a folder structure similar to what one would find on a personal computer. Recently,
+        to accomodate personal goals, the project has been expanded to allow public file sharing,
+        and video streaming.
+
+        <br /><br />
+
+        The project is currently deployed with Digital Ocean, on an Ubuntu 18.04 machine.
+        Using <a href="https://nginx.org">Nginx</a> as a webserver, and
+        <a href="https://rocket.rs">Rocket</a> to handle traffic. It uses a PostgreSQL Database,
+        hosted by Amazon Web Services (AWS) RDS. The project is written in
+        <a href="https://www.rust-lang.org/">Rust</a>.
+
+    </p>
+
+    <br />
+
+    <div class="d-flex">
+        <h4 class="h4 mb-0">Personal Task Automation Tool</h4>
+    </div>
+
+    <hr />
+
+    <p>
+        A tool made to perform configured tasks automatically.
+
+        <br /><br />
+
+        Originally intended as a learning experience, this project is now a tool that provides
+        simple task automation. The project can be made to perform scripts triggered by a timer,
+        intervals, or disk changes. This project was used to build an integration service,
+        listed below.
+
+    </p>
+
+    <br />
+
+    <div class="d-flex">
+        <h4 class="h4 mb-0">Personal Integration Service</h4>
+    </div>
+
+    <hr />
+
+    <p>
+        This project creates a connection between numerous devices, allowing them to communicate
+        directly without creating a direct connection between them. It is targeted towards
+        devices within a small range of eachother, such as within a house or apartment.
+
+        <br /><br />
+
+        This project, as of now, can open a Websocket Server with both Basic and Token
+        authentication. It can track every device connected and log every message sent. It
+        also has a portal accessable through the browser, allowing the user to see all
+        current activity, and create new access tokens for new devices.
+
+        <br /><br />
+
+        It is written in Rust with PostgreSQL,
+        using WS-RS as the Websocket interface, Rocket for the web interface,
+        Diesel as the ORM, and Tera for the templating engine. It utilizes an event-handling
+        system similar to that of the automation tool, to handle and direct traffic and
+        perform directed behavior upon the events of triggering messages.
+    </p>
+</div>
+{% endblock body %}

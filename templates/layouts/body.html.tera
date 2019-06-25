@@ -1,0 +1,6 @@
+<body>
+    {% include "layouts/nav" %}
+
+    {% block body %}
+    {% endblock body %}
+</body>

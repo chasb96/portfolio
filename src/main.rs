@@ -13,7 +13,7 @@ use std::path::{Path, PathBuf};
 
 fn main() {
     rocket::ignite()
-        .mount("/", routes![home, resume, download, files])
+        .mount("/", routes![home, projects, resume, download, files])
         .attach(Template::fairing())
         .launch();
 }
@@ -25,7 +25,17 @@ fn home() -> Template {
 
     let context = Context {};
 
-    Template::render("home", &context)
+    Template::render("views/home", &context)
+}
+
+#[get("/projects")]
+fn projects() -> Template {
+    #[derive(Serialize)]
+    struct Context {}
+
+    let context = Context {};
+
+    Template::render("views/projects", &context)
 }
 
 #[get("/resume")]
@@ -35,7 +45,7 @@ fn resume() -> Template {
 
     let context = Context {};
 
-    Template::render("resume", &context)
+    Template::render("views/resume", &context)
 }
 
 #[get("/files/<file..>")]

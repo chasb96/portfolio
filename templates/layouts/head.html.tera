@@ -1,0 +1,17 @@
+<head>
+    <meta charset="utf-8" />
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/custom.css">
+    {% endblock stylesheets %}
+
+    {% block scripts %}
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
+    {% endblock scripts %}
+
+    {% block title %}
+        <title>Charles Bassett</title>
+    {% endblock title %}
+</head>
