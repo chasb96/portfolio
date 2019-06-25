@@ -7,6 +7,6 @@ authors = ["Charles Bassett <chasb96@gmail.com>"]
 serde = "1.0"
 serde_json = "1.0"
 serde_derive = "1.0"
-rocket = "0.4.0-rc.1"
-rocket_codegen = "0.4.0-rc.1"
-rocket_contrib = { version = "0.4.0-rc.1", features = ["tera_templates"] }
+rocket = "0.4.1"
+rocket_codegen = "0.4.1"
+rocket_contrib = { version = "0.4.1", features = ["tera_templates"] }
