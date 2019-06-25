@@ -8,12 +8,10 @@
 
     <br />
 
-    <div class="d-flex">
-        <h4 class="h4 mb-0">Personal Cloud Storage</h4>
+    <div class="row mx-0">
+        <h4 class="mb-0">Personal Cloud Storage</h4>
 
-        <div class="flex-grow-1"></div>
-
-        <a class="mb-0" href="https://drive.cstouten.xyz">https://drive.cstouten.xyz</a>
+        <a class="ml-auto mb-0" href="https://drive.cstouten.xyz">https://drive.cstouten.xyz</a>
     </div>
 
     <hr />
