@@ -9,9 +9,9 @@
     <br />
 
     <div class="row mx-0">
-        <h4 class="mb-0">Personal Cloud Storage</h4>
-
-        <a class="ml-auto mb-0" href="https://drive.cstouten.xyz">https://drive.cstouten.xyz</a>
+        <a class="ml-auto mb-0" href="https://drive.cstouten.xyz">
+            <h4 class="mb-0">Personal Cloud Storage</h4>
+        </a>
     </div>
 
     <hr />
