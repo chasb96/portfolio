@@ -1,45 +1,11 @@
-<!DOCTYPE html>
+{% extends "base" %}
 
-<html>
-
-<head>
-    <meta charset="utf-8" />
-
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/custom.css">
-
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
-
-    <title>Charles Bassett</title>
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="col">
-            <h1 class="text-white m-0 mr-4" href="/">Charles Bassett</h1>
-        </div>
-        <div class="col-one">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">About</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/resume">Resume <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+{% block body %}
+    {{ super() }}
 
     <div class="container mt-4 mb-4">
         <div class="container-fluid text-center">
-            1330 Monks Ave, Apt. 210A, Mankato MN, 56001
+            2125 N. Donovan Way, San Ramon, CA, 94582
             <br/>
             651-434-0426
             <br/>
@@ -50,10 +16,24 @@
 
         <h4 class="h4">Education</h4>
         <ul>
-            <li>Graduate of Tartan Senior High School</li>
-            <li>Advanced Placement classes in upper-level calculus and computer science</li>
-            <li>Graduate of Minnesota State University, Mankato</li>
-            <li>Graduate Student at Minnesota State University, Mankato</li>
+            <li>
+                Minnesota State University, ​Mankato —​ Masters
+                <div class="mx-3 mb-3 ">
+                    May 2018 - PRESENT
+                    <br/>
+                    Information Technology, with a focus in Software Development.
+                    <br/>
+                </div>
+            </li>
+            <li>
+                Minnesota State University, ​Mankato — Bachelors
+                <div class="mx-3 mb-3 ">
+                    August 2014 - May 2018
+                    <br/>
+                    Information Technology, with a focus in Software Development. Minor in Mathematics.
+                    <br/>
+                </div>
+            </li>
         </ul>
 
         <br/><br/>
@@ -67,12 +47,23 @@
         <br/><br/>
         <h4 class="h4">Work Experience</h4>
         <ul>
-            <li>Developer at B507
-                <ul>
-                    <li>Frontend & Backend Developer</li>
-                    <li>Worked with others to develop software</li>
-                    <li>Created software with Php Laravel, Sencha Touch, C#.NET</li>
-                </ul>
+            <li>
+                B507, Mankato, MN — Team Lead
+                <div class="mx-3 mb-3 ">
+                    August 2018 - May 2019
+                    <br/>
+                    Mentored and guided employees, maintained company software, lead company and client meetings, administered company accounts.
+                    <br/>
+                </div>
+            </li>
+            <li>
+                B507, Mankato, MN — Developer
+                <div class="mx-3 mb-3 ">
+                    April 2016 - August 2018
+                    <br/>
+                    Worked with teams to develop client software, engaged in client meetings.
+                    <br/>
+                </div>
             </li>
         </ul>
 
@@ -107,10 +98,4 @@
             </div>
         </div>
     </div>
-
-    <div class="container-fluid text-white bg-primary mb-0 p-4">
-        <h6 class="h6 text-white">Portfolio, Charles Bassett</h6>
-    </div>
-</body>
-
-</html>
+{% endblock body %}
