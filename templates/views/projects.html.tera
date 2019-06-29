@@ -9,7 +9,7 @@
     <br />
 
     <div class="row mx-0">
-        <a class="ml-auto mb-0" href="https://drive.cstouten.xyz">
+        <a class="mb-0" href="https://drive.cstouten.xyz">
             <h4 class="mb-0">Personal Cloud Storage</h4>
         </a>
     </div>
@@ -25,7 +25,7 @@
         This project is meant to allow storage of files at a remote location, rather than
         needing an outside service to do so. It allows creating, updating, and deleting files
         within a folder structure similar to what one would find on a personal computer. Recently,
-        to accomodate personal goals, the project has been expanded to allow public file sharing,
+        to accomodate personal goals, the project has been expanded to allow public file sharing
         and video streaming.
 
         <br /><br />
@@ -69,7 +69,7 @@
     <p>
         This project creates a connection between numerous devices, allowing them to communicate
         directly without creating a direct connection between them. It is targeted towards
-        devices within a small range of eachother, such as within a house or apartment.
+        devices within a small range of each other, such as within a house or apartment.
 
         <br /><br />
 
