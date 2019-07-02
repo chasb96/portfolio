@@ -9,6 +9,27 @@
     <br />
 
     <div class="row mx-0">
+        <a class="mb-0" href="http://safehrapp.b507.net/">
+            <h4 class="mb-0">SAFEHR</h4>
+        </a>
+    </div>
+
+    <hr />
+
+    <p>
+        A EHR system, made for the Minnesota State University, to train nursing students
+        through their degree program.
+
+        <br /><br />
+
+        Developed with the SAFEHR team, created for the Minnesota State University Nursing Department.
+        It is a iPad focused App aimed at presenting students with a full experience of a real-world EHR
+        system, with extra tools for professors to help teach students.
+    </p>
+
+    <br />
+
+    <div class="row mx-0">
         <a class="mb-0" href="https://drive.cstouten.xyz">
             <h4 class="mb-0">Personal Cloud Storage</h4>
         </a>
