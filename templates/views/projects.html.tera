@@ -30,6 +30,24 @@
     <br />
 
     <div class="row mx-0">
+        <h4 class="h4 mb-0">OERG UMC</h4>
+    </div>
+
+    <hr />
+
+    <p>
+        An employee training platform made for the United Machining Company, to train managerial
+        staff.
+
+        <br /><br />
+
+        Developed with the UMC team, created for the United Machining Company. It is a full training
+        platform, including video content, audio content, testing, progress tracking, and reporting.
+    </p>
+
+    <br />
+
+    <div class="row mx-0">
         <a class="mb-0" href="https://drive.cstouten.xyz">
             <h4 class="mb-0">Personal Cloud Storage</h4>
         </a>
