@@ -4,7 +4,7 @@
     {{ super() }}
 
     <div class="container mt-4 mb-4">
-        <h2 class="h2">About Me</h2>
+        <h2 class="h2">About Charles</h2>
 
         <p>
             Charles is a software engineer from San Ramon, California.
