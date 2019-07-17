@@ -97,7 +97,7 @@
         <div class="container-fliud">
             <div class="flex-container">
                 <div class="flex-align"></div>
-                    <a href="/files/resume.pdf" class="btn btn-primary mx-auto">Download</a>
+                    <a href="/files/resume.pdf" class="btn btn-primary btn-md mx-auto">Download</a>
                 <div class="flex-align"></div>
             </div>
         </div>
