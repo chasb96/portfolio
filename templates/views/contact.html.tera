@@ -1,0 +1,20 @@
+{% extends "base" %}
+
+{% block body %}
+    {{ super() }}
+
+    <div class="container mt-4 mb-4">
+        <h2 class="h2">Contact</h2>
+
+        <p>
+            You can contact charles through:
+
+            <ul>
+                <li>Email at <a class="a" href="mailto:chasb96@gmail.com">chasb96@gmail.com</a></li>
+                <li>Github at <a class="a" href="https://github.com/chasb96">github.com/chasb96</a></li>
+            </ul>
+        </p>
+    </div>
+
+
+{% endblock body %}

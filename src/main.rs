@@ -23,7 +23,16 @@ fn main() {
     rocket::ignite()
         .mount(
             "/",
-            routes![home, projects, resume, download, files, force_reload, force],
+            routes![
+                home,
+                projects,
+                resume,
+                contact,
+                download,
+                files,
+                force_reload,
+                force
+            ],
         )
         .attach(Template::fairing())
         .launch();
@@ -57,6 +66,16 @@ fn resume() -> Template {
     let context = Context {};
 
     Template::render("views/resume", &context)
+}
+
+#[get("/contact")]
+fn contact() -> Template {
+    #[derive(Serialize)]
+    struct Context {}
+
+    let context = Context {};
+
+    Template::render("views/contact", &context)
 }
 
 #[get("/files/<file..>")]

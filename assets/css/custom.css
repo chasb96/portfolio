@@ -32,7 +32,7 @@ body {
     border-bottom-left-radius: 1em;
 }
 
-a {
+a, .a {
     text-decoration: underline;
 }
 
