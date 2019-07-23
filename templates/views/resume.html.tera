@@ -4,6 +4,7 @@
     {{ super() }}
 
     <div class="container mt-4 mb-4">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAASCAQAAAAnfOz+AAAAEUlEQVR42mNkwAoYR4UHgzAAEPsAEzwDuwsAAAAASUVORK5CYII=" width="100%" height="0">
         <object data="files/resume.pdf" type="application/pdf" width="100%" height="900">
             <div class="container-fluid text-center">
                 2125 N. Donovan Way, San Ramon, CA, 94582
