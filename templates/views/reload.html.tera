@@ -1,0 +1,23 @@
+{% extends "base" %}
+
+{% block body %}
+    {{ super() }}
+
+    <div class="container mt-4 mb-4">
+        <form action="/reload" method="POST">
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password"/>
+            </div>
+
+            <hr/>
+
+            <div class="d-flex">
+                <div class="flex-grow-1"></div>
+                <button class="btn btn-primary mx-auto" type="submit">Reload</button>
+                <div class="flex-grow-1"></div>
+            </div>
+        </form>
+    </div>
+
+{% endblock body %}
