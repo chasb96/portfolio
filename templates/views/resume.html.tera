@@ -4,6 +4,104 @@
     {{ super() }}
 
     <div class="container mt-4 mb-4">
-        <embed src="/files/resume.pdf" class="embed-responsive" height="900" type="application/pdf">
+        <object data="files/resume.pdf" type="application/pdf" width="100%" height="900">
+            <div class="container-fluid text-center">
+                2125 N. Donovan Way, San Ramon, CA, 94582
+                <br/>
+                651-434-0426
+                <br/>
+                chasb96@gmail.com
+            </div>
+
+            <br/><br/>
+
+            Developer with 3 years experience. Skilled in backend development and database systems. Teamwork and communication oriented. Familiar with C# and Php, and a quick learner of new material.
+
+            <br/><br/>
+
+            <h4 class="h4">Education</h4>
+            <ul>
+                <li>
+                    Minnesota State University, ​Mankato —​ Masters
+                    <div class="mx-3 mb-3 ">
+                        May 2018 - PRESENT
+                        <br/>
+                        Information Technology, with a focus in Software Development.
+                        <br/>
+                    </div>
+                </li>
+                <li>
+                    Minnesota State University, ​Mankato — Bachelors
+                    <div class="mx-3 mb-3 ">
+                        August 2014 - May 2018
+                        <br/>
+                        Information Technology, with a focus in Software Development. Minor in Mathematics.
+                        <br/>
+                    </div>
+                </li>
+            </ul>
+
+            <br/><br/>
+            <h4 class="h4">Hobbies and Interests</h4>
+            <ul>
+                <li>Rebuilding, repairing, and maintaining computer hardware, and software</li>
+                <li>Music: primarily bass-guitar, with experience in other instruments</li>
+                <li>Reading</li>
+            </ul>
+
+            <br/><br/>
+            <h4 class="h4">Work Experience</h4>
+            <ul>
+                <li>
+                    B507, Mankato, MN — Team Lead
+                    <div class="mx-3 mb-3 ">
+                        August 2018 - May 2019
+                        <br/>
+                        Mentored and guided employees, maintained company software, lead company and client meetings, administered company accounts.
+                        <br/>
+                    </div>
+                </li>
+                <li>
+                    B507, Mankato, MN — Developer
+                    <div class="mx-3 mb-3 ">
+                        April 2016 - August 2018
+                        <br/>
+                        Worked with teams to develop client software, engaged in client meetings.
+                        <br/>
+                    </div>
+                </li>
+            </ul>
+
+            <br/><br/>
+            <h4 class="h4">Programming Experience</h4>
+            <h6 class="h6">Languages</h6>
+            <ul>
+                <li>Rust</li>
+                <li>Php</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>C#</li>
+                <li>C</li>
+                <li>Java</li>
+            </ul>
+
+            <h6 class="h6">Frameworks</h6>
+            <ul>
+                <li>Laravel</li>
+                <li>Rocket</li>
+                <li>React</li>
+                <li>Sencha Touch</li>
+            </ul>
+
+            <br/><br/>
+
+            <div class="container-fliud">
+                <div class="flex-container">
+                    <div class="flex-align"></div>
+                        <a href="/files/resume.pdf" class="btn btn-primary btn-md mx-auto">Download</a>
+                    <div class="flex-align"></div>
+                </div>
+            </div>
+        </object>
     </div>
 {% endblock body %}
