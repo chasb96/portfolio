@@ -91,9 +91,14 @@ fn force(payload: Form<ForceReloadPayload>) -> Redirect {
         Err(_) => return Redirect::to("/"),
     };
 
+    let reload_command = match env::var("RELOAD_COMMAND") {
+        Ok(database_url) => database_url,
+        Err(_) => return Redirect::to("/"),
+    };
+
     if password == payload.password {
         Command::new("git").args(vec!["pull"]).output().unwrap();
-        Command::new("./restart-server.sh").output().unwrap();
+        Command::new(reload_command).output().unwrap();
     }
 
     Redirect::to("/")
