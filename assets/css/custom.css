@@ -39,3 +39,19 @@ a, .a {
 li a {
     text-decoration: none;
 }
+
+.object-container {
+    position: relative;
+    padding-bottom: 163.63%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.object-container object {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
