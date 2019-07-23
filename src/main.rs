@@ -93,7 +93,7 @@ fn force(payload: Form<ForceReloadPayload>) -> Redirect {
 
     if password == payload.password {
         Command::new("git").args(vec!["pull"]).output().unwrap();
-        Command::new("restart-server.sh").output().unwrap();
+        Command::new("./restart-server.sh").output().unwrap();
     }
 
     Redirect::to("/")
