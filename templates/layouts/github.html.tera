@@ -1,0 +1,33 @@
+<div id="github-container" class="container-fluid text-white bg-primary">
+    <div class="flex-container p-5">
+        <div class="flex-align"></div>
+        <div class="github-container" data-user="chasb96">
+            <h2 class="h2 text-white">GitHub</h2>
+            <a id="url">
+                <div id="profile" class="bg-white text-dark row">
+                    <div id="avatar"></div>
+                    <div id="info" class="p-3">
+                        <h2 id="name"></h2>
+                        <p id="repos"></p>
+                        <p id="followers"></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="flex-align"></div>
+    </div>
+</div>
+
+<script>
+    $.ajax({
+        url: 'https://api.github.com/users/' + $('.github-container').data('user')
+    }).then((response) => {
+        let avatar_url = 'url("' + response.avatar_url + '")';
+
+        $('#url').attr('href', response.html_url);
+        $('#avatar').css('background-image', avatar_url);
+        $('#name').html(response.name);
+        $('#repos').html(response.public_repos + ' Respositories');
+        $('#followers').html(response.followers + ' Followers');
+    })
+</script>
