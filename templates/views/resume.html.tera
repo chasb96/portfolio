@@ -3,7 +3,8 @@
 {% block body %}
     {{ super() }}
 
-    <div class="container object-container">
+    <div class="container object-container mt-4 mb-4">
+        <img src="/assets/pdf_backdrop.png" class="object-backdrop"/>
         <object data="files/resume.pdf" type="application/pdf">
             <div class="container mt-4 mb-4">
                 <p>
