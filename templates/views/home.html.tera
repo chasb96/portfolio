@@ -18,44 +18,43 @@
             many of which can be found on the <a href="/projects">Projects page<a>, or on his <a href="https://github.com/chasb96">Github</a>.
             He is an avid reader, most consumed in software development.
 
-            <br /><br />
-
-            Charles' top languages include:
-            <ul>
-                <li>Rust</li>
-                <li>Php</li>
-                <li>JavaScript</li>
-                <li>C#</li>
-                <li>TypeScript-React</li>
-            </ul>
-
-            The top technologies he is most familiar with include:
-            <ul>
-                <li>PostgreSQL</li>
-                <li>MySQL</li>
-                <li>SQLServer</li>
-                <li>Apache2</li>
-                <li>Nginx</li>
-            </ul>
-
-            Other tools, technologies and frameworks include:
-            <ul>
-                <li>Rocket</li>
-                <li>Diesel</li>
-                <li>Laravel</li>
-                <li>React</li>
-                <li>Bootstrap</li>
-            </ul>
-
-            He is most familiar with the business software:
-            <ul>
-                <li>Slack</li>
-                <li>Team Foundation Server (TFS)</li>
-                <li>GitHub</li>
-                <li>BitBucket</li>
-                <li>Microsoft Teams</li>
-            </ul>
         </p>
+
+        Charles' top languages include:
+        <ul>
+            <li>Rust</li>
+            <li>Php</li>
+            <li>JavaScript</li>
+            <li>C#</li>
+            <li>TypeScript-React</li>
+        </ul>
+
+        The top technologies he is most familiar with include:
+        <ul>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>SQLServer</li>
+            <li>Apache2</li>
+            <li>Nginx</li>
+        </ul>
+
+        Other tools, technologies and frameworks include:
+        <ul>
+            <li>Rocket</li>
+            <li>Diesel</li>
+            <li>Laravel</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+        </ul>
+
+        He is most familiar with the business software:
+        <ul>
+            <li>Slack</li>
+            <li>Team Foundation Server (TFS)</li>
+            <li>GitHub</li>
+            <li>BitBucket</li>
+            <li>Microsoft Teams</li>
+        </ul>
     </div>
 
 
