@@ -4,6 +4,10 @@
     {{ super() }}
 
     <div class="container mt-4 mb-4">
+        <div class="alert alert-danger">
+            <h4 class="alert-heading">Danger!</h4>
+            <p>This will trigger a pull and rebuild, and result in it killing its own process. It should go down for a while, be wary!</p>
+        </div>
         <form action="/reload" method="POST">
             <div class="form-group">
                 <label for="password">Password</label>
