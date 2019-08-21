@@ -69,6 +69,10 @@ li a {
     background-size: contain;
 }
 
+a#badge {
+    text-decoration: none;
+}
+
 @media (min-width: 800px) {
     .portrait {
         margin-top: 1.5em;

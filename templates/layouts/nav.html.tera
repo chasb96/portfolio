@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="col">
-        <h1 class="text-white m-0 mr-0 h3" href="/">Charles Bassett</h1>
+        <a id="badge" class="text-white m-0 mr-0 h3" href="/">Charles Bassett</a>
     </div>
     <div class="col-one">
         <button class="navbar-toggler btn btn-lg" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,7 +11,7 @@
     <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/">About</a>
+                <a class="nav-link" href="/about">About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/projects">Projects</a>
