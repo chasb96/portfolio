@@ -40,7 +40,52 @@ li a {
     text-decoration: none;
 }
 
+.icons {
+    margin-top: 6em;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+    background-position:80% 50%;
+}
+
+#github.icon {
+    margin-left: auto;
+    margin-right: 0.75rem;
+    background-image: url("/files/github.png");
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
+#linkedin.icon {
+    margin-right: auto;
+    margin-left: 0.75rem;
+    background-image: url("/files/linkedin.png");
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
 @media (min-width: 800px) {
+    .portrait {
+        margin-top: 1.5em;
+        border-radius: 100%;
+        width: 25em;
+        height: 25em;
+        background-image: url("/files/portrait.jpeg");
+        background-position:80% 50%;
+        background-repeat:no-repeat;
+        background-size: cover;
+    }
+
+    .intro {
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+    }
+
     .object-container {
         position: relative;
         width: 100%;
@@ -61,6 +106,15 @@ li a {
 }
 
 @media (max-width: 800px) {
+    .portrait {
+        padding-bottom: 75%;
+        width: 100%;
+        background-image: url("/files/portrait.jpeg");
+        background-position:80% 50%;
+        background-repeat:no-repeat;
+        background-size: cover;
+    }
+
     .object-container {
         position: relative;
         padding-bottom: 143.63%;

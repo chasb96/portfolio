@@ -25,6 +25,7 @@ fn main() {
             "/",
             routes![
                 home,
+                about,
                 projects,
                 resume,
                 contact,
@@ -46,6 +47,16 @@ fn home() -> Template {
     let context = Context {};
 
     Template::render("views/home", &context)
+}
+
+#[get("/about")]
+fn about() -> Template {
+    #[derive(Serialize)]
+    struct Context {}
+
+    let context = Context {};
+
+    Template::render("views/about", &context)
 }
 
 #[get("/projects")]
