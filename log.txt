@@ -1,0 +1,9 @@
+Application launching, current time: 2019-09-11 03:16:40.972940524 UTC
+Got request from IP 127.0.0.1 for [32mGET[0m [34m/[0m [33mtext/html[0m
+Got request from IP 127.0.0.1 for [32mGET[0m [34m/assets/css/bootstrap.min.css[0m [33mtext/css[0m
+Got request from IP 127.0.0.1 for [32mGET[0m [34m/assets/css/custom.css[0m [33mtext/css[0m
+Got request from IP 127.0.0.1 for [32mGET[0m [34m/assets/js/jquery.min.js[0m
+Got request from IP 127.0.0.1 for [32mGET[0m [34m/assets/js/bootstrap.min.js[0m
+Got request from IP 127.0.0.1 for [32mGET[0m [34m/files/portrait.jpeg[0m [33mimage/webp[0m
+Got request from IP 127.0.0.1 for [32mGET[0m [34m/files/linkedin.png[0m [33mimage/webp[0m
+Got request from IP 127.0.0.1 for [32mGET[0m [34m/files/github.png[0m [33mimage/webp[0m

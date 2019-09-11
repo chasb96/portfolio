@@ -1,11 +1,18 @@
 #![feature(plugin)]
 #![feature(proc_macro_hygiene, decl_macro)]
+extern crate chrono;
 extern crate dotenv;
+extern crate lazy_static;
 extern crate rocket;
 extern crate rocket_contrib;
 extern crate serde;
 extern crate serde_derive;
 
+#[macro_use]
+mod logging;
+mod fairings;
+
+use fairings::log::LogFairing as Logging;
 use rocket::request::Form;
 use rocket::response::NamedFile;
 use rocket::response::Redirect;
@@ -36,6 +43,7 @@ fn main() {
             ],
         )
         .attach(Template::fairing())
+        .attach(Logging)
         .launch();
 }
 
